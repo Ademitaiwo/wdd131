@@ -67,12 +67,12 @@ header {
 
 .p {
     margin: 0;
-
 }
 
 .footer {
     background-color:rgb(85, 87, 88);
     padding: 30px;
     text-align: center;
+    margin-bottom: 0;
    
 }
