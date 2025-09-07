@@ -1,15 +1,28 @@
+* General Reset */ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    /* overflow-x: hidden; */
-   
+    overflow-x: hidden;
+
+}
+
+body {
+    /* margin: 0;
+    font-family: Arial, Helvetica, sans-serif; */
+    min-height: 100vh;
+    /* ensures body fills screen height */
 }
 
 header {
     background-color: rgb(63, 66, 67);
     padding: 10px;
     color: white;
-   
+
 }
 
 .navbar {
@@ -65,14 +78,17 @@ header {
     font-weight: bold;
 }
 
-.p {
+
+.footer {
+    background-color: rgb(85, 87, 88);
+    color: white;
+    font-weight: bold;
+    padding: 30px 0;
+    text-align: center;
     margin: 0;
 }
 
-.footer {
-    background-color:rgb(85, 87, 88);
-    padding: 30px;
-    text-align: center;
-    margin-bottom: 0;
-   
+
+.p {
+    margin-top: 60px;
 }
