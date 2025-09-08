@@ -11,7 +11,7 @@ body {
 header {
     background-color: #003366;
     color: white;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     margin-top: -10px;
 
@@ -177,7 +177,7 @@ footer p {
 
 @media (max-width: 500px) {
     #course-title {
-        font-size: 1rem;
+        font-size: bold;
     }
 
     .nav-list {
