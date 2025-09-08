@@ -70,6 +70,7 @@ header {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: large;
     padding: 8px 12px;
     transition: background 0.3s ease;
 }
