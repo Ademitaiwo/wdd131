@@ -1,7 +1,7 @@
 * General Reset */ * {
-    margin: 0;
+    /* margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; */
 
 }
 
@@ -19,7 +19,7 @@ header {
     color: white;
     padding: 10px;
     text-align: center;
-    margin-top: -35px;
+    margin-top: -10px;
 
 }
 
