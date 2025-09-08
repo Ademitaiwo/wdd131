@@ -23,9 +23,31 @@ header {
 
 }
 
+.h2-container h2{
+    
+    width: 120%;
+    /* make h2 longer */
+    margin-left: -2%;
+    margin-right: -2%;
+    /* shift it back to stay centered */
+    padding: 10px;
+    align-items: center;
+}
+
+.container-h2 h2{
+  
+    width: 120%;
+    /* make h2 longer */
+    margin-left: -4%;
+    margin-right: -4%;
+    /* shift it back to stay centered */
+    padding: 10px;
+   
+}
+
 #course-title {
     display: block;
-    font-size: 1.3rem;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -58,7 +80,7 @@ header {
     transition: background 0.3s ease;
 }
 
-.nav-list a:hover {
+.navbar a:hover {
     background-color: #555;
     border-radius: 4px;
 }
@@ -95,9 +117,12 @@ h3 {
 
 .card h2 {
     background: #003366;
+    text-align: center;
     color: white;
     padding: 10px;
     border-radius: 6px 6px 0 0;
+    margin-top: -14px;
+    width: auto;
 }
 
 .card-content {
