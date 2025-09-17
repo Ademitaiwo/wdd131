@@ -1,0 +1,39 @@
+/* temples-large.css - desktop styles */
+
+@media (min-width: 768px) {
+  .header-inner {
+    flex-direction: row;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .site-nav {
+    display: block !important;
+    margin-top: 0;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .nav-list li {
+    margin: 0;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+  }
+
+  .page-heading {
+    font-size: 2rem;
+  }
+
+  .site-footer {
+    font-size: 1rem;
+  }
+}

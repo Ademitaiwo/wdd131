@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Acme, Arial, sans-serif;
+}
+
+.banner {
+    width: 35%;
+    height: 300px;
+    background-color: #261236;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(226, 223, 223, 0.1);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+
+main {
+    margin: 1rem auto;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    padding: 1rem;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+input,
+button {
+    padding: 0.5rem;
+}
+
+button {
+    margin: 0.5rem;
+}
+
+.delete {
+    width: fit-content;
+}
+
+.input {
+    display: flex;
+    gap: 1rem;
+}
+
+.list {
+    padding: 0.5rem;
+}
+
+ul {
+    margin: 1rem;
+    list-style: none;
+    background: #eeeeee;
+}
+
+li {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr;
+}
+
+@media only screen and (min-width: 32.5em) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        width: 320px;
+    }
+}
+/* .container{
+    border-radius: red;
+    border: grey;
+    background-color: rgb(79, 10, 135);
+    padding: 20px;
+} */
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* one column, like table rows */
+    gap: 8px;
+    /* spacing between rows */
+    list-style: none;
+    /* remove bullets */
+    padding: 0;
+}
+
+.list-items {
+    border: 1px solid #333;
+    /* makes it look like a table cell */
+    padding: 8px;
+    text-align: center;
+}
+
