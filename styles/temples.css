@@ -102,6 +102,9 @@ footer p {
     font-size: 1.2em;
 }
 
+/* #nav-menu::before {
+    content: "≡";
+} */
 
 @media screen and (max-width: 600px) {
     nav a {
