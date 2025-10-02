@@ -1,0 +1,160 @@
+/* General styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #003366;
+    /* Dark Blue */
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header img {
+    width: 50px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #003366;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Color samples */
+.color-sample {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+.primary {
+    background-color: #003366;
+    /* Dark Blue */
+}
+
+.secondary {
+    background-color: #e0e0e0;
+    /* Light Gray */
+}
+
+/* Wireframes */
+.wireframes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.wireframes img {
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    max-width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: #555;
+}
+
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+/* Wireframe styles */
+.wireframes {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.wireframe {
+    border: 2px solid #ccc;
+    padding: 15px;
+    background: #fafafa;
+    border-radius: 8px;
+    width: 300px;
+    font-size: 0.9rem;
+}
+
+.wireframe h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.box {
+    border: 1px solid #999;
+    background: #ddd;
+    margin: 5px 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* Desktop rows */
+.row {
+    display: flex;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+.row .box {
+    flex: 1;
+}
+
+/* Different box highlights */
+.hero .image {
+    background: #bbb;
+}
+
+.hero .text {
+    background: #eee;
+}
+
+.projects .box {
+    background: #ccc;
+}
+
+.about .image {
+    background: #bbb;
+}
+
+.contact .form {
+    background: #ddd;
+}
+
+.contact .info {
+    background: #eee;
+}
