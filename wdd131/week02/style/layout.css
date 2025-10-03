@@ -1,0 +1,94 @@
+* General Reset */ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+body {
+    /* margin: 0;
+    font-family: Arial, Helvetica, sans-serif; */
+    min-height: 100vh;
+    /* ensures body fills screen height */
+}
+
+header {
+    background-color: rgb(63, 66, 67);
+    padding: 10px;
+    color: white;
+
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+    margin-top: 10px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.nav-list a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* .main-content{
+    background-color: rgb(255, 255, 255);
+    padding: 150px;
+} */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.main1 {
+    background-color: rgb(167, 169, 171);
+    color: rgb(0, 0, 0);
+    padding: 150px;
+    font-weight: bold;
+
+}
+
+.main2 {
+    background-color: rgb(253, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 150px;
+    font-weight: bold;
+}
+
+
+.footer {
+    background-color: rgb(85, 87, 88);
+    color: white;
+    font-weight: bold;
+    padding: 30px 0;
+    text-align: center;
+    margin: 0;
+}
+
+
+.p {
+    margin-top: 60px;
+}

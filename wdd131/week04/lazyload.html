@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+        }
+
+        header {
+            background: #004080;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* NAVIGATION */
+        .nav-container {
+            background: #0066cc;
+            position: relative;
+        }
+
+        .hamburger {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: white;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            display: none;
+            /* hidden on desktop */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 0.5rem;
+        }
+
+        nav button {
+            background: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        nav button:hover {
+            background: #ffd700;
+        }
+
+        /* Small screen menu hidden until toggle */
+        @media (max-width: 700px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0.5rem 1rem;
+            }
+
+            nav.show {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
+            }
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            background: #004080;
+            color: white;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Temples Around the World</h1>
+    </header>
+
+    <div class="nav-container">
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <nav id="nav-menu">
+            <button data-filter="home">Home</button>
+            <button data-filter="old">Old</button>
+            <button data-filter="new">New</button>
+            <button data-filter="large">Large</button>
+            <button data-filter="small">Small</button>
+        </nav>
+    </div>
+
+    <main id="templeContainer"></main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="temples.js"></script>
+    <script>
+        // Hamburger toggle
+        document.getElementById("hamburger").addEventListener("click", () => {
+            document.getElementById("nav-menu").classList.toggle("show");
+        });
+    </script>
+</body>
+
+</html>

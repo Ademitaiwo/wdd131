@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Taiwo Owolabi — Web & Software Developer</title>
+  <meta name="description" content="Portfolio of a BYU-Pathway Worldwide web developer studying HTML, CSS, and JavaScript." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#" class="logo">Taiwo<span class="dot">.</span></a>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="menu-toggle" class="icon-btn mobile-only" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Hello — I'm <span class="accent">Taiwo Owolabi</span></h1>
+          <p class="lead">A web & software developer studying at <strong>BYU‑Pathway Worldwide</strong>. I build responsive, accessible, and maintainable websites using HTML, CSS and JavaScript.</p>
+          <div class="cta-group">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+
+          <ul class="hero-meta">
+            <li><strong>Role:</strong> Aspiring Front-end Developer</li>
+            <li><strong>Location:</strong> Nigeria</li>
+            <li><strong>Study:</strong> BYU‑Pathway Worldwide</li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <div class="card-top">
+            <div class="avatar" aria-hidden="true">TO</div>
+            <div>
+              <h3>Taiwo Owolabi</h3>
+              <p class="muted">Web & Software Developer (Student)</p>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <p class="small muted">Skills snapshot</p>
+            <div class="skill-spark">
+              <div class="spark-label">HTML</div><div class="spark-bar"><div style="--v:95%"></div></div>
+              <div class="spark-label">CSS</div><div class="spark-bar"><div style="--v:88%"></div></div>
+              <div class="spark-label">JavaScript</div><div class="spark-bar"><div style="--v:70%"></div></div>
+            </div>
+            <p class="muted small">Available for freelance projects & collaborations.</p>
+            <a class="btn btn-sm" href="#contact">Let's talk</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>About Me</h2>
+          <p class="muted">A short overview of my journey and approach.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-left">
+            <p>I am a student of <strong>BYU‑Pathway Worldwide</strong> focused on front-end web development. My learning path emphasizes practical projects and strong fundamentals in HTML, CSS, and JavaScript. I enjoy turning designs into accessible, responsive web experiences and continuously improving my code quality and tooling knowledge.</p>
+            <ul class="about-list">
+              <li><strong>Currently learning:</strong> Modern JavaScript (ES6+), DOM APIs, responsive layouts</li>
+              <li><strong>Tools:</strong> VSCode, Git, Chrome DevTools</li>
+              <li><strong>Focus:</strong> Accessibility, performance, and maintainable CSS</li>
+            </ul>
+          </div>
+          <div class="about-right">
+            <div class="profile-card">
+              <h3>BYU‑Pathway Student</h3>
+              <p class="muted small">Committed to continuous learning and practical projects.</p>
+              <div class="stack-list">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git</span><span>Responsive Design</span>
+              </div>
+              <a href="#projects" class="btn btn-sm">See projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Skills</h2>
+          <p class="muted">Core strengths & technologies I use</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill">
+            <h4>HTML</h4>
+            <p class="muted small">Semantic markup, forms, accessibility</p>
+          </div>
+          <div class="skill">
+            <h4>CSS</h4>
+            <p class="muted small">Responsive layouts, Flexbox, Grid, modern patterns</p>
+          </div>
+          <div class="skill">
+            <h4>JavaScript</h4>
+            <p class="muted small">DOM, events, projects with vanilla JS</p>
+          </div>
+          <div class="skill">
+            <h4>Tooling</h4>
+            <p class="muted small">Git, VSCode, NPM basics</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p class="muted">A selection of projects built while learning. Click a card for details.</p>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <article class="project-card" data-title="Portfolio Website" data-desc="A professional portfolio built with semantic HTML, modern CSS and vanilla JavaScript. Responsive design and theme toggle included." data-stack="HTML · CSS · JavaScript">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'><rect width='100%' height='100%' fill='%23f3f4f6'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%238b8b8b' font-size='28'>Portfolio Website</text></svg>" alt="Portfolio thumbnail">
+            <div class="project-card-body">
+              <h3>Portfolio Website</h3>
+              <p class="muted small">Responsive presentation site with projects and contact form.</p>
+              <div class="project-meta"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+          </article>
+
+          <article class="project-card coming-soon">
+            <div class="project-card-body">
+              <h3>More projects coming</h3>
+              <p class="muted small">As I build more projects during my BYU‑Pathway journey, they will appear here.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p class="muted">I'd love to hear about opportunities, collaborations, or feedback.</p>
+        </div>
+
+        <div class="contact-grid">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required placeholder="Your full name">
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="you@example.com">
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project or question"></textarea>
+            </div>
+            <div class="form-row form-actions">
+              <button type="submit" class="btn btn-primary">Send message</button>
+              <button type="reset" class="btn btn-ghost">Reset</button>
+            </div>
+            <p id="form-status" class="muted small" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact-aside">
+            <div class="contact-card">
+              <h3>Let's connect</h3>
+              <p class="muted">Email: <a href="mailto:you@example.com">you@example.com</a></p>
+              <p class="muted">LinkedIn: <a href="#">Your LinkedIn</a></p>
+              <p class="muted">Location: Nigeria</p>
+              <div class="socials">
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Taiwo Owolabi — Built with ❤️ while studying at BYU‑Pathway Worldwide</p>
+      <nav class="footer-nav">
+        <a href="#home">Back to top</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-stack" class="muted small"></p>
+      <p id="modal-desc"></p>
+      <div class="modal-actions">
+        <a id="modal-live" class="btn btn-primary" href="#" target="_blank" rel="noopener">View live</a>
+        <a id="modal-code" class="btn btn-ghost" href="#" target="_blank" rel="noopener">View code</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
